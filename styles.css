@@ -103,6 +103,10 @@ p {
   display: inline-block;
 }
 
+img.contact {
+  max-height: 11vw;
+}
+
 @media screen and (max-width: 768px) {
   .cont {
     width: 90%;
@@ -128,6 +132,11 @@ p {
   .banner img {
     width: 60vw;
   }
+
+  img.contact {
+    max-height: 15vh;
+  }
+
 }
 
 @media screen and (max-width: 575px) {
