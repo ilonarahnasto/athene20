@@ -1,6 +1,6 @@
 body {
-  /**background-image: url("static/vujutausta2.jpg"), url("static/vujutausta.jpg");
-  background-repeat: no-repeat;**/
+  background-image: url("static/vujutausta2.jpg"), url("static/vujutausta.jpg");
+  background-repeat: no-repeat;
   background-color: black;
   color: white;
   font-family: "Lato", sans-serif !important;
