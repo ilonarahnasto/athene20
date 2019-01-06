@@ -21,6 +21,11 @@ h3 {
   text-align: center;
 }
 
+h5 {
+  padding-top: 1em;
+
+}
+
 .banner {
   text-align: center;
 }
@@ -99,6 +104,19 @@ p {
 .notCentered {
   text-align: left;
   display: inline-block;
+}
+
+div.contact {
+  padding-left: 2.8rem;
+  padding-right: 2.8rem;
+}
+
+.contact-images {
+  padding-top: 2em;
+}
+
+.contact-col {
+  padding-top: 2em;
 }
 
 img.contact {
