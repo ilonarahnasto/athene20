@@ -1,10 +1,8 @@
-body {
-  background-image: url("static/vujutausta2.jpg"), url("static/vujutausta.jpg");
-  background-repeat: no-repeat;
+html body {
   background-color: black;
   color: white;
-  font-family: "Lato", sans-serif !important;
-  font-weight: 300 !important;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
 }
 
 @font-face {
@@ -13,14 +11,14 @@ body {
 }
 
 h1 {
-  font-family: "BrokenHeart" !important;
-  font-size: 70px !important;
+  font-family: "BrokenHeart";
+  font-size: 70px;
   text-align: center;
-  margin-bottom: 1.5rem !important;
+  margin-bottom: 1.5rem;
 }
 
 h3 {
-  text-align: center !important;
+  text-align: center;
 }
 
 .banner {
@@ -42,7 +40,7 @@ nav li {
 }
 
 .active {
-  font-weight: 400 !important;
+  font-weight: 400;
 }
 
 p {
@@ -53,7 +51,7 @@ p {
   background-color: rgba(255, 255, 255, 0.5);
   padding: 2rem 5rem;
   margin: 3rem auto;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 50%;
   text-align: center;
 }
@@ -64,7 +62,7 @@ p {
 
 .sponsorCont {
   text-align: center;
-  margin-bottom: 1rem !important;
+  margin-bottom: 1rem;
   padding: 2rem 2rem;
 }
 
@@ -90,7 +88,7 @@ p {
   margin: 0.5rem 1rem 2rem 1rem;
   border: 2px rgb(41, 41, 41) solid;
   background-color: rgba(255, 255, 255, 0.5);
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
 .button:hover {
@@ -130,7 +128,7 @@ img.contact {
   }
 
   .banner img {
-    width: 60vw;
+    width: 50vw;
   }
 
   img.contact {
@@ -143,10 +141,10 @@ img.contact {
   nav li {
     text-align: left;
     padding-left: 10px;
-    width: 25vw !important;
+    width: 25vw;
   }
 
   h1 {
-    font-size: 60px !important;
+    font-size: 60px;
   }
 }
