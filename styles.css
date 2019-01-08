@@ -64,7 +64,8 @@ p {
 }
 
 blockquote {
-  padding: 0.6em;
+  padding-top: 0.6em;
+  padding-bottom: 0px;
 }
 
 blockquote p {
@@ -160,7 +161,7 @@ img.contact:hover {
 
   .text-container {
     padding: 2rem 2rem 0rem 2rem;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
   }
 
   nav li {
