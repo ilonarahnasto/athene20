@@ -55,8 +55,7 @@ nav li {
   color: grey !important;
 }
 
-.active {
-  font-weight: 400;
+.active .nav-link {
   color: grey !important;
 }
 
