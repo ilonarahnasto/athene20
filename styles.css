@@ -57,6 +57,7 @@ nav li {
 
 .active {
   font-weight: 400;
+  color: grey !important;
 }
 
 p {
