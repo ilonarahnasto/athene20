@@ -47,6 +47,14 @@ nav li {
   text-align: center;
 }
 
+.nav-link {
+  color: black !important;
+}
+
+.nav-link:hover {
+  color: grey !important;
+}
+
 .active {
   font-weight: 400;
 }
@@ -162,6 +170,10 @@ img.contact:hover {
 
   nav li:nth-child(n+4) {
     width: 20vw;
+  }
+
+  .active .nav-link {
+    color: grey !important;
   }
 
   .banner img {
