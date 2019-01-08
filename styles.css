@@ -28,7 +28,7 @@ h4 {
 }
 
 .banner img {
-  width: 25vw;
+  width: 26vw;
   margin: 1rem;
   opacity: 0.8;
 }
@@ -55,63 +55,17 @@ p {
   font-size: 1.2rem;
 }
 
+blockquote {
+  padding: 0.6em;
+}
+
+blockquote p {
+  font-weight: bold;
+}
+
 .cont {
-  /*background-color: rgba(255, 255, 255, 0.5);*/
-  padding: 2rem 5rem;
-  margin: 3rem auto;
-  border-radius: 5px;
-  width: 60%;
+  padding: 3rem 18rem 0rem 18rem;
   text-align: center;
-}
-
-.textCont {
-  padding-bottom: 3rem;
-}
-
-.sponsorCont {
-  text-align: center;
-  margin-bottom: 1rem;
-  padding: 2rem 2rem;
-}
-
-.sponsorCont img {
-  width: 120px;
-  margin: 10px 20px 0;
-  justify-content: center;
-}
-
-.sponsorCont h2 {
-  margin-bottom: 20px;
-}
-
-.topSpacing {
-  margin-top: 1em;
-}
-
-.button {
-  font-size: 1.5rem;
-  display: inline-block;
-  border-radius: 10px;
-  padding: 0.5rem 1.2rem;
-  margin: 0.5rem 1rem 2rem 1rem;
-  border: 2px rgb(41, 41, 41) solid;
-  background-color: rgba(255, 255, 255, 0.5);
-  text-decoration: none;
-}
-
-.button:hover {
-  background: url("static/buttonbg.png");
-  cursor: pointer;
-}
-
-.notCentered {
-  text-align: left;
-  display: inline-block;
-}
-
-div.contact {
-  padding-left: 2.8rem;
-  padding-right: 2.8rem;
 }
 
 .contact-images {
@@ -134,18 +88,70 @@ img.contact:hover {
   transform: rotateY(180deg);
 }
 
+.index-bottom-img {
+  background-image: url("static/smoke.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.semma-bottom-img {
+  background-image: url("static/semma.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.tassu-bottom-img {
+  background-image: url("static/tassu2.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.ahky-bottom-img {
+  background-image: url("static/ahky.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 1;
+}
+
 @media screen and (max-width: 768px) {
+  body h1 {
+    font-size: 2.5em;
+  }
+
   .cont {
-    width: 90%;
-    padding: 1.5rem;
+    padding: 2rem 2rem 0rem 2rem;
+    margin-bottom: 10px;
   }
 
   p {
     font-size: 18px;
-  }
-
-  .sponsorCont img {
-    width: 120px;
   }
 
   nav li {
@@ -162,6 +168,15 @@ img.contact:hover {
 
   img.contact {
     max-height: 25vh;
+  }
+
+  .bottom {
+    background-size: auto 30%;
+    position: fixed;
+  }
+
+  .semma-bottom-img {
+    opacity: 0.4;
   }
 
 }
