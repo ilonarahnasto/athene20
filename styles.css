@@ -111,7 +111,7 @@ img.contact:hover {
 }
 
 .semma-bottom-img {
-  background-image: url("static/semma.png");
+  background-image: url("static/gold.png");
   background-repeat: no-repeat;
   background-position: left bottom;
   width: 100%;
@@ -120,7 +120,7 @@ img.contact:hover {
   bottom: 0px;
   right: 0px;
   z-index: -1;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .tassu-bottom-img {
