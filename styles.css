@@ -180,13 +180,25 @@ img.contact:hover {
     width: 50vw;
   }
 
+  .text-container.semma {
+    padding-bottom: 1em;
+  }
+
   .bottom {
-    background-size: auto 30%;
+    background-size: auto 28%;
     position: fixed;
+  }
+
+  .index-bottom-img {
+    opacity: 0.65;
   }
 
   .semma-bottom-img {
     opacity: 0.4;
+  }
+
+  .ahky-bottom-img {
+    opacity: 0.8;
   }
 
 }
