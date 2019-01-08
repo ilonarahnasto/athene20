@@ -73,7 +73,7 @@ blockquote p {
 }
 
 .text-container {
-  padding: 3rem 8rem 0rem 8rem;
+  padding: 3rem 16rem 0rem 16rem;
   text-align: center;
 }
 
@@ -145,7 +145,6 @@ img.contact:hover {
 }
 
 .tldr {
-  font-weight: 600;
   margin-top: 1.5rem;
   border-top: lightgray 1px solid;
   padding-top: 1.5rem;
