@@ -168,10 +168,6 @@ img.contact:hover {
     width: 19vw;
   }
 
-  nav li:nth-child(n+4) {
-    width: 20vw;
-  }
-
   .active .nav-link {
     color: grey !important;
   }
