@@ -154,6 +154,17 @@ img.contact:hover {
   padding-top: 1.5rem;
 }
 
+.tldr a {
+  font-weight: bold;
+  color: black;
+}
+
+.tldr a:hover {
+  color: black;
+  font-weight: normal;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 768px) {
   body h1 {
     font-size: 2.5em;
