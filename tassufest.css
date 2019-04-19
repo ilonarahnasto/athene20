@@ -2,25 +2,34 @@
   --bg-color: #fceed5;
   --light-turquoise: #00a2a7;
   --dark-turquoise:  #005f68;
-  --red: #ff2e21;
+  --main-red: #ff3333;
   --main-font: 'Poppins', sans-serif;
   --secondary-font: 'Playfair Display', serif;
+  --tassu-coral: #dccaca;
 }
 
 .tassufest-container {
-  /* background-color: var(--bg-color); */
+  background-color: var(--tassu-coral);
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  padding-bottom: 100px;
+}
+
+.tassufest .banner {
+  background-color: white;
 }
 
 .container-fluid.tassufest-container * {
   font-family: var(--main-font);
+  color: black;
 }
 
 .container-fluid.tassufest-container h1 {
   padding-top: 3rem;
-  color: var(--dark-turquoise);
-  text-transform: uppercase;
+  color: var(--main-red);
+  /* text-transform: uppercase; */
+  font-family: var(--main-font);
+  font-weight: 900;
 }
 
 .tassufest-container .text-field {
@@ -36,8 +45,8 @@
   padding: 0 20px;
   margin-top: 20px;
   display: grid;
-  grid-gap: 50px 50px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
+  grid-gap: 25px 50px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr) );
 }
 
 .artist, #tba{
@@ -86,8 +95,8 @@ figure a {
 }
 
 #artist2 {
-  background-image: url('static/artists/tuuttimorko_testi.jpg');
-  background-position: center 0;
+  background-image: url('static/artists/tuuttimorko.jpg');
+  background-position: 25% 25%;
 }
 
 #artist3 {
@@ -99,7 +108,7 @@ figure a {
 }
 
 #artist4 {
-  background-image: url('static/artists/kuahu.png');
+  background-image: url('static/artists/kuahu_logo.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -112,13 +121,13 @@ figure a {
 }
 
 #tba {
-  background-color: #ffcbcb80;
+  background-color: white;
   max-width: 100%;
   max-height: 250px;
 }
 
-#tba:hover {
-  color: var(--red);
+.tassufest-container .artists-container #tba:hover figcaption   {
+  color: var(--main-red);
 }
 
 .tassufest-container .artists-container figcaption {
@@ -127,15 +136,18 @@ figure a {
   text-transform: uppercase;
   pointer-events: none;
   margin: auto;
+  font-weight: 600;
 }
 
 .tassufest-container .artists-container .artist figcaption {
   opacity: 0;
   transition: opacity 0.25s ease-in-out;
+  color: black;
 }
 
 .tassufest-container .artists-container .artist:hover figcaption {
   opacity: 1;
+  color: black;
 }
 .tassufest-logo {
   width: 70%;
@@ -152,7 +164,8 @@ figure a {
   text-align: center;
   text-decoration: none;
   font-family: 'FontAwesome';
-  border-radius: 50%
+  border-radius: 50%;
+  color: white;
 }
 
 .tassufest-container.container-fluid .fa:hover, .tassufest .fa:hover {
@@ -166,7 +179,7 @@ figure a {
 }
 
 .fa-instagram {
-  background: var(--red);
+  background: var(--main-red);
   color: white;
 }
 .some {
@@ -199,10 +212,12 @@ figure a {
   justify-content: center;
   align-items: center;
   height: 100%;
-  margin-top: 100px;
   background-color: white;
   text-align: center;
   padding: 25px;
+  color: black;
+  font-family: var(--main-font);
+  font-weight: 400;
 }
 
 @media screen and (max-width: 768px) {
@@ -229,9 +244,26 @@ figure a {
   }
 }
 
+@media screen and (min-width: 1600px) {
+  .tassufest-container .artists-container {
+    grid-template-columns: repeat(4, 350px);
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .tassufest-container .text-field {
+    padding: 0 30rem;
+  }
+}
+
 @media screen and (max-width: 575px) {
   .tassufest-container .text-field {
     padding: 0 1.5rem;
+  }
+
+  .tassufest-container {
+    padding-bottom: 50px;
   }
 
   .tassufest-container .text-field > p {
@@ -244,7 +276,7 @@ figure a {
 
   .artists-container {
     margin-top: 10px;
-    grid-gap: 20px 20px;
+    grid-gap: 10px 20px;
   }
 
   footer .footer-some .fa {
@@ -252,9 +284,6 @@ figure a {
     margin: 10px 15px;
     font-size: 20px;
     width: 50px;
-  }
-  .tassufest footer {
-    margin-top: 50px;
   }
 
   .partners .partner {
