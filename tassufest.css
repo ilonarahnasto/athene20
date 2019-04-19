@@ -66,13 +66,13 @@
 }
 
 .artist::before {
-  content: '';
+  /* content: '';
   background-color: rgba(255, 255, 255, 0.0);
   width: 100%;
   height: 100%;
   position: absolute;
   z-index: -2;
-  transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out; */
 }
 
 figure {
@@ -130,6 +130,10 @@ figure a {
   color: var(--main-red);
 }
 
+.tassufest-container .artists-container a {
+  text-decoration: none;
+}
+
 .tassufest-container .artists-container figcaption {
   padding: 10px;
   font-size: 35px;
@@ -147,8 +151,14 @@ figure a {
 
 .tassufest-container .artists-container .artist:hover figcaption {
   opacity: 1;
+  color: white;
+}
+
+.tassufest-container .artists-container #artist3:hover figcaption {
+  opacity: 1;
   color: black;
 }
+
 .tassufest-logo {
   width: 70%;
   align-self: center;
