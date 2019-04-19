@@ -61,16 +61,14 @@
   cursor: pointer;
 }
 
-
-/* .artists-container a {
-  background-color: rgba(255, 255, 255, 0.0);
-  transition: background-color 0.25s ease-in-out;
+.artists-container .artist {
+  box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.0);
+  transition: box-shadow 0.25s ease-in-out;
 }
 
-.artists-container a:hover {
-  background-color: rgba(38, 197, 245, 0.2);
-} */
-
+.artists-container .artist:hover {
+  box-shadow: inset 1000px 0 0 0 rgba(0, 0, 0, 0.3);
+}
 
 figure {
   text-align: center;
@@ -140,14 +138,9 @@ figure a {
   font-weight: 600;
 }
 
-.artists-container .artist:not(#artist3) figcaption {
-  transition: opacity 0.25s ease-in-out;
-  color: white;
-}
-
 .artists-container .artist figcaption {
   transition: opacity 0.25s ease-in-out;
-  color: black;
+  color: white;
 }
 
 .artists-container .artist figcaption {
