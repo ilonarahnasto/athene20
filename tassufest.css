@@ -91,6 +91,7 @@ figure a {
 #artist1 {
   background-image: url('static/artists/ruudolf.jpg');
   background-position: center 0;
+  background-size: cover;
 }
 
 #artist2 {
