@@ -19,9 +19,9 @@
   background-position: left top, center 30%, 0% 65%, -20% 111%, 90% 90%;
 }
 
-.tassufest .banner {
+/* .tassufest .banner {
   background-color: white;
-}
+} */
 
 .container-fluid.tassufest-container * {
   font-family: var(--main-font);
