@@ -183,6 +183,7 @@ figure a {
   margin: 60px auto 0;
   width: 90%;
   max-width: 550px;
+  height: 100%;
 }
 
 .tassufest-container.container-fluid .fa, .tassufest footer .fa {
