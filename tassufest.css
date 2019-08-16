@@ -120,10 +120,22 @@ figure a {
   background-position: center -30px;
 }
 
+#artist6 {
+  background-image: url('static/artists/ptnky.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: black;
+}
+
 #tba {
   background-color: white;
   max-width: 100%;
   max-height: 250px;
+}
+
+.strikethrough {
+  text-decoration-line: line-through;
 }
 
 .artists-container #tba:hover figcaption   {
@@ -160,7 +172,17 @@ figure a {
   width: 50%;
   align-self: center;
   margin-top: 25px;
-  max-width: 600px;
+  max-width: 800px;
+}
+
+.schedule {
+  display: flex;
+}
+
+.schedule img {
+  margin: 60px auto 0;
+  width: 90%;
+  max-width: 550px;
 }
 
 .tassufest-container.container-fluid .fa, .tassufest footer .fa {
@@ -191,6 +213,7 @@ figure a {
 }
 .some {
   margin: auto;
+  margin-top: 20px;
 }
 
 .highlight {
@@ -326,5 +349,9 @@ figure a {
 
   .ticket-types {
     padding: 0.5rem 0 0.5rem 0;
+  }
+
+  .schedule img {
+    margin-top: 25px;
   }
 }
