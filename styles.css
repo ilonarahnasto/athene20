@@ -5,6 +5,7 @@ html body {
   color: black;
   font-family: 'Thasadith', sans-serif;
   font-weight: lighter;
+
 }
 
 body h1 {
@@ -38,10 +39,15 @@ h4 {
 }
 
 .navbar {
-  background-color: white !important;
+ 
   opacity: 0.8;
 }
-
+.navbar-light{
+   background-color: white !important;
+}
+.timetable{
+  line-height: 1rem;
+}
 button.navbar-toggler {
   font-size: 0.75rem;
 }
@@ -77,7 +83,7 @@ blockquote p {
 }
 
 .text-container {
-  padding: 3rem 16rem 0rem 16rem;
+  padding: 3rem 8rem 0rem 8rem;
   text-align: center;
 }
 
