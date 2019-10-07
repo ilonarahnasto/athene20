@@ -73,6 +73,10 @@ p {
   font-size: 1.2rem;
 }
 
+p.bold-highlight {
+  font-weight: 900 !important;
+}
+
 blockquote {
   padding-top: 0.6em;
   padding-bottom: 0px;
@@ -145,7 +149,7 @@ img.contact:hover {
   opacity: 0.7;
 }
 
-.ahky-bottom-img {
+/* .ahky-bottom-img {
   background-image: url("static/ahky.png");
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -156,7 +160,7 @@ img.contact:hover {
   right: 0;
   z-index: -1;
   opacity: 1;
-}
+} */
 
 .tldr {
   margin-top: 1.5rem;
@@ -173,6 +177,51 @@ img.contact:hover {
   color: black;
   font-weight: normal;
   text-decoration: none;
+}
+
+.vuju-container::after {
+  content: '';
+  background: url("static/Infoahky_asset_marmori.jpg");
+  background-repeat: repeat;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; 
+  
+}
+.vuju-container .text-container {
+  padding-bottom: 40px;
+}
+
+.vuju-container + footer  {
+  padding: 40px 0;
+}
+
+.partners {
+  padding: 0 20px;
+  margin-top: 20px;
+  display: grid;
+  grid-gap: 25px 50px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.partner {
+  margin: auto;
+}
+
+.partner img {
+  max-width: 250px;
+}
+
+.payment-details {
+  padding: 1rem 0;
+}
+
+.payment-details:first-of-type  {
+  border-bottom: 1px grey solid;
 }
 
 @media screen and (max-width: 768px) {
