@@ -189,15 +189,70 @@ img.contact:hover {
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: -1; 
-  
+  z-index: -2; 
 }
+/* .vuju-container .text-container::after {
+  content: '';
+  background: url(static/taustatolppa.png);
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-position-x: 98%;
+  background-position-y: bottom;
+} */
+
 .vuju-container .text-container {
   padding-bottom: 40px;
 }
 
+.vuju-container .timetable-container {
+  list-style-position: inside;
+  text-align: start;
+  display: inline-block;
+  padding-left: 0;
+}
+
+.timetable-container:nth-of-type(1) {
+  padding-left: 60px;
+  margin-bottom: 0;
+}
+
+.vuju-container a {
+  font-weight: 900;
+  color: black;
+}
+
+.vuju-container a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
 .vuju-container + footer  {
   padding: 40px 0;
+  border-top: 1px grey solid;
+}
+
+.vuju-container + footer h2.mb-2 {
+  margin-bottom: 0.75rem !important;
+}
+
+.vuju-container .inner-text-container {
+  max-width: 850px;
+  margin: auto;
+}
+
+.vuju-container h3 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.vuju-container h2.mb-2 {
+  margin-bottom: 0.75rem !important;
 }
 
 .partners {
@@ -292,5 +347,9 @@ img.contact:hover {
 
   img.contact {
     max-height: 20vh;
+  }
+
+  .timetable-container:nth-of-type(1) {
+    padding-left: 0;
   }
 }
