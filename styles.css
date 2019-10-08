@@ -5,6 +5,7 @@ html body {
   color: black;
   font-family: 'Thasadith', sans-serif;
   font-weight: lighter;
+
 }
 
 body h1 {
@@ -38,10 +39,15 @@ h4 {
 }
 
 .navbar {
-  background-color: white !important;
+ 
   opacity: 0.8;
 }
-
+.navbar-light{
+   background-color: white !important;
+}
+.timetable{
+  line-height: 1rem;
+}
 button.navbar-toggler {
   font-size: 0.75rem;
 }
@@ -67,6 +73,10 @@ p {
   font-size: 1.2rem;
 }
 
+p.bold-highlight {
+  font-weight: 900 !important;
+}
+
 blockquote {
   padding-top: 0.6em;
   padding-bottom: 0px;
@@ -77,7 +87,7 @@ blockquote p {
 }
 
 .text-container {
-  padding: 3rem 16rem 0rem 16rem;
+  padding: 3rem 8rem 0rem 8rem;
   text-align: center;
 }
 
@@ -139,7 +149,7 @@ img.contact:hover {
   opacity: 0.7;
 }
 
-.ahky-bottom-img {
+/* .ahky-bottom-img {
   background-image: url("static/ahky.png");
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -150,7 +160,7 @@ img.contact:hover {
   right: 0;
   z-index: -1;
   opacity: 1;
-}
+} */
 
 .tldr {
   margin-top: 1.5rem;
@@ -167,6 +177,106 @@ img.contact:hover {
   color: black;
   font-weight: normal;
   text-decoration: none;
+}
+
+.vuju-container::after {
+  content: '';
+  background: url("static/Infoahky_asset_marmori.jpg");
+  background-repeat: repeat;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -2; 
+}
+/* .vuju-container .text-container::after {
+  content: '';
+  background: url(static/taustatolppa.png);
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-position-x: 98%;
+  background-position-y: bottom;
+} */
+
+.vuju-container .text-container {
+  padding-bottom: 40px;
+}
+
+.vuju-container .timetable-container {
+  list-style-position: inside;
+  text-align: start;
+  display: inline-block;
+  padding-left: 0;
+}
+
+.timetable-container:nth-of-type(1) {
+  padding-left: 60px;
+  margin-bottom: 0;
+}
+
+.vuju-container a {
+  font-weight: 900;
+  color: black;
+}
+
+.vuju-container a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.vuju-container + footer  {
+  padding: 40px 0;
+  border-top: 1px grey solid;
+}
+
+.vuju-container + footer h2.mb-2 {
+  margin-bottom: 0.75rem !important;
+}
+
+.vuju-container .inner-text-container {
+  max-width: 850px;
+  margin: auto;
+}
+
+.vuju-container h3 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.vuju-container h2.mb-2 {
+  margin-bottom: 0.75rem !important;
+}
+
+.partners {
+  padding: 0 20px;
+  margin-top: 20px;
+  display: grid;
+  grid-gap: 25px 50px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.partner {
+  margin: auto;
+}
+
+.partner img {
+  max-width: 250px;
+}
+
+.payment-details {
+  padding: 1rem 0;
+}
+
+.payment-details:first-of-type  {
+  border-bottom: 1px grey solid;
 }
 
 @media screen and (max-width: 768px) {
@@ -237,5 +347,12 @@ img.contact:hover {
 
   img.contact {
     max-height: 20vh;
+  }
+
+  .timetable-container:nth-of-type(1) {
+    padding-left: 0;
+  }
+  .partner img {
+    max-width: 200px;
   }
 }
