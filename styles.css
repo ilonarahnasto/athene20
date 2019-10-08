@@ -356,3 +356,9 @@ img.contact:hover {
     max-width: 200px;
   }
 }
+
+@media screen and (min-width: 1180px) {
+  .partners {
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+  }
+}
