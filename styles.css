@@ -257,9 +257,9 @@ img.contact:hover {
 
 .partners {
   padding: 0 20px;
-  margin-top: 20px;
+  margin-top: 40px;
   display: grid;
-  grid-gap: 25px 50px;
+  grid-gap: 50px 50px;
   align-items: center; 
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
@@ -273,7 +273,8 @@ img.contact:hover {
 }
 
 .partner img {
-  max-width: 75%;
+  max-width: 65%;
+  max-height: 80px;
 }
 
 .payment-details {
